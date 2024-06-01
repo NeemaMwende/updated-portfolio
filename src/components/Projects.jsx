@@ -40,10 +40,10 @@ const Projects = () => {
 
         <Slider ref={sliderRef} {...settings}>
           {PROJECTS.map((project, index) => (
-            <div key={index} className="project-slide">
+            <div key={index} className="project-slide projects">
               <img src={project.image} alt={project.name} />
               <div className='information'>
-                <h3>{project.name}</h3>
+                <span><h3>{project.name}</h3></span>
                 <p>{project.description}</p>
                 <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
               </div>

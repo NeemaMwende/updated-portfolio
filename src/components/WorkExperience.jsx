@@ -46,11 +46,13 @@ const WorkExperience = () => {
     <section id='work' className='experience-container'>
       <h5>Work Experience</h5>
       <div className="experience-content">
-        <div className="arrow-right" onClick={slideRight}>
-          &gt;
-        </div>
-        <div className="arrow-left" onClick={slideLeft}>
-          &lt;
+        <div className='arrows'>
+            <div className="arrow-right" onClick={slideRight}>
+              &gt;
+            </div>
+            <div className="arrow-left" onClick={slideLeft}>
+              &lt;
+            </div>
         </div>
         <Slider ref={sliderRef} {...settings}>
           {WORK_EXPERIENCE.map((item) => (
