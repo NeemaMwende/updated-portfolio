@@ -41,7 +41,7 @@ const Projects = () => {
         <Slider ref={sliderRef} {...settings}>
           {PROJECTS.map((project, index) => (
             <div key={index} className="project-slide">
-              <img src={angel} alt={project.name} />
+              <img src={project.image} alt={project.name} />
               <div className='information'>
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
