@@ -1,0 +1,87 @@
+.experience-container {
+    margin: 4rem 0;
+    position: relative;
+}
+
+.experience-container h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    text-align: center; /* Center the heading for better aesthetics */
+}
+
+@media (max-width: 768px) {
+    .experience-container h5 {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+}
+.arrow-left,
+.arrow-right {
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6751b9;
+    border-radius: 0.65rem;
+    border: 1.5px solid #6751b9;
+    background: #130f2a;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow-left {
+    left: -2.5rem; /* Adjust for desktop view */
+}
+
+.arrow-right {
+    right: -2.5rem; /* Adjust for desktop view */
+}
+
+@media(max-width: 1025px) {
+    .arrow-left {
+        left: -2rem; /* Adjust for tablet view */
+    }
+    .arrow-right {
+        right: -2rem; /* Adjust for tablet view */
+}
+}
+
+@media (max-width: 768px) {
+    .arrow-left {
+        left: -1.5rem; /* Adjust for mobile view */
+    }
+    .arrow-right {
+        right: -1.5rem; /* Adjust for mobile view */
+    }
+    .experience-content {
+        padding: 0 1rem; /* Add padding to ensure the content is not too close to the edges */
+        font-size: 30px;
+    }
+    /* .experience-container{
+        height: 100px;
+        width: 20rem;
+        font-size: 30px;
+    } */
+}
+
+@media(max-width: 480px) {
+    .arrow-left, .arrow-right {
+        width: 1.8rem; /* Adjust size for smaller screens */
+        height: 1.8rem; /* Adjust size for smaller screens */
+    }
+    .arrow-left {
+        left: -1rem; /* Adjust for smaller screens */
+    }
+    .arrow-right {
+        right: -1rem; /* Adjust for smaller screens */
+    }
+    .experience-container{
+        height: 40px;
+        width: 100px;
+    }
+}

@@ -1,0 +1,118 @@
+/* .work-experience-card{
+    background: #130f2a;
+    border-radius: 0.85rem;
+    border: 1.5px solid #6751b9;
+    padding: 1.5rem;
+    margin: 0 1rem;
+}
+.work-experience-card h6{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0.9rem;
+}
+.work-duration{
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 400;
+    background: rgba(103, 81, 105, 0.5);
+    border-radius: 0.3rem;
+    padding: 0.4rem 0.6rem;
+    margin-bottom: 1.3rem;
+}
+.work-experience-card ul li {
+    list-style: none;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+.work-experience-card ul li::after{
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #6751b9;
+    border-radius: 0.5rem;
+    position: absolute;
+    left: -1.3rem;
+    top: 0.35rem;
+}
+@media(max-width: 768px){
+    .work-experience-card{
+        margin: 0;
+    }
+    .work-experience-card h6{
+        font-size: 0.95rem;
+    }
+    .work-experience-card ul li {
+        font-size: 0.75rem;
+    }
+}
+@media(max-width: 768px){
+    .work-duration{
+        font-size: 0.6rem;
+    }
+    
+} */
+.work-experience-card {
+    background: #130f2a;
+    border-radius: 0.85rem;
+    border: 1.5px solid #6751b9;
+    padding: 1.5rem;
+    margin: 0 1rem;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.work-experience-card h6 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0.9rem;
+}
+
+.work-duration {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 400;
+    background: rgba(103, 81, 105, 0.5);
+    border-radius: 0.3rem;
+    padding: 0.4rem 0.6rem;
+    margin-bottom: 1.3rem;
+}
+
+.work-experience-card ul li {
+    list-style: none;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.work-experience-card ul li::after {
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #6751b9;
+    border-radius: 0.5rem;
+    position: absolute;
+    left: -1.3rem;
+    top: 0.35rem;
+}
+
+@media(max-width: 768px) {
+    .work-experience-card {
+        margin: 0.5rem 0; /* Reduce margin for smaller screens */
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+    .work-experience-card h6 {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+    .work-experience-card ul li {
+        font-size: 0.75rem; /* Adjust font size for smaller screens */
+    }
+}
+
+@media(max-width: 480px) {
+    .work-duration {
+        font-size: 0.6rem; /* Adjust font size for smaller screens */
+    }
+}
+
