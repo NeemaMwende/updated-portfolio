@@ -14,7 +14,7 @@ const Skills = () => {
   };
 
   return (
-    <section id='skills' className='skills-container'>
+    <section id='skills-section' className='skills-container'>
       <SlidingCard>
       <h5>Technical Profiency</h5>
       </SlidingCard>

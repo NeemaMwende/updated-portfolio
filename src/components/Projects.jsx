@@ -29,7 +29,7 @@ const Projects = () => {
   };
 
   return (
-    <section id='projects' className="projects-container">
+    <section id='projects-section' className="projects-container">
       <div className="arrow-right" onClick={slideRight}>
         &gt;
       </div>

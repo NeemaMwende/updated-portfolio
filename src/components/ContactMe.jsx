@@ -9,7 +9,7 @@ import ContactForm from './ContactForm';
 
 const ContactMe = () => {
   return (
-    <section className='contact-container' id='contact'>
+    <section className='contact-container' id='contact-section'>
       <h5>Contact Me</h5>
 
       <div className="contact-content">

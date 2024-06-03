@@ -44,7 +44,7 @@ const WorkExperience = () => {
   };
 
   return (
-    <section id='work' className='experience-container'>
+    <section id='work-section' className='experience-container'>
      <SlidingCard>
       <h5>Work Experience</h5>
       </SlidingCard>
