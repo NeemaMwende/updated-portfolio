@@ -3,6 +3,7 @@ import './Skills.css'
 import SkillCard from './SkillCard';
 import { SKILLS } from '../../src/utils/data';
 import SkillsInfoCard from './SkillsInfoCard';
+import SlidingCard from './SlidingCard';
 
 const Skills = () => {
 
@@ -14,9 +15,13 @@ const Skills = () => {
 
   return (
     <section id='skills' className='skills-container'>
+      <SlidingCard>
       <h5>Technical Profiency</h5>
+      </SlidingCard>
 
+      <SlidingCard>
       <div className='skills-content'>
+     
         <div className='skills'>
             {SKILLS.map((item) => (
               <SkillCard 
@@ -30,6 +35,7 @@ const Skills = () => {
               />
             ))}
         </div>
+        
 
         <div className='skills-info'>
           <SkillsInfoCard 
@@ -37,7 +43,9 @@ const Skills = () => {
             skills={selectedSkill.skills}
           />
         </div>
+        
       </div>
+      </SlidingCard>
     </section>
   );
 };
