@@ -30,18 +30,24 @@ import React from 'react';
 // import { FaReact, FaHtml5, FaCss3Alt } from 'react-icons/fa'; // Importing icons from Font Awesome
 import "./Bio.css";
 import angel from '../Images/image1.jpg';
+import SlidingCard from './SlidingCard';
 
 const Bio = () => {
   return (
     <section className='hero-container'>
-      <div className='hero-content'>
-        <h2>Building Digital <span>Experiences </span>That Inspire</h2>
-        <p>Passionate Full Stack Developer | Transforming Ideas into Seamless and Visually Stunning Web Solutions</p>
-      </div>
-      <div className='hero-img'>
-        <img src={angel} alt="Profile" className='profile-img' />
-
-      </div>
+        <div className='hero-content'>
+          <SlidingCard>
+          <h2>Building Digital <span>Experiences </span>That Inspire</h2>
+        </SlidingCard>
+        <SlidingCard>
+          <p>Passionate Full Stack Developer | Transforming Ideas into Seamless and Visually Stunning Web Solutions</p>
+        </SlidingCard>
+        </div>
+        <SlidingCard>
+        <div className='hero-img'>
+          <img src={angel} alt="Profile" className='profile-img' />
+        </div>
+        </SlidingCard>
     </section>
   );
 };
