@@ -35,16 +35,14 @@ import SlidingCard from './SlidingCard';
 const Bio = () => {
   return (
     <section className='hero-container'>
-        <div className='hero-content'>
-          <SlidingCard>
+        <SlidingCard>
+        <div className='hero-content slide-card'>
           <h2>Building Digital <span>Experiences </span>That Inspire</h2>
-        </SlidingCard>
-        <SlidingCard>
           <p>Passionate Full Stack Developer | Transforming Ideas into Seamless and Visually Stunning Web Solutions</p>
-        </SlidingCard>
         </div>
-        <SlidingCard>
-        <div className='hero-img'>
+        </SlidingCard>
+        <SlidingCard >
+        <div className='hero-img slide-card'>
           <img src={angel} alt="Profile" className='profile-img' />
         </div>
         </SlidingCard>
