@@ -19,11 +19,11 @@ const Navbar = () => {
                         <img className='logo' src={angel} alt='' />
 
                         <ul>
-                            <li id='home'><a className="menu-item">Home</a></li>
-                            <li id='skills'><a className="menu-item">Skills</a></li>
-                            <li id='work'><a className="menu-item">Work Experience</a></li>
-                            <li id='projects'><a className="menu-item">Projects</a></li>
-                            <li id='contact'><a className="menu-item">Contact Me</a></li>
+                            <li id='home'><a className="menu-item" href='home-section'>Home</a></li>
+                            <li id='skills'><a className="menu-item" href='skills-section'>Skills</a></li>
+                            <li id='work'><a className="menu-item" href='work-section'>Work Experience</a></li>
+                            <li id='projects'><a className="menu-item" href='projects-section'>Projects</a></li>
+                            <li id='contact'><a className="menu-item" href='contact-section'>Contact Me</a></li>
 
                          <div className='btns'>
                             <button className='contact-btn' onClick={() => {}}>Hire Me</button>
