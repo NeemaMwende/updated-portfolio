@@ -6,6 +6,7 @@ import './Projects.css';
 import angel from "../Images/movie.png";
 import { useRef } from 'react';
 import { PROJECTS } from "../../src/utils/data";
+import SlidingCard from './SlidingCard';
 
 
 const Projects = () => {
@@ -35,6 +36,7 @@ const Projects = () => {
       <div className="arrow-left" onClick={slideLeft}>
         &lt;
       </div>
+      <SlidingCard>
       <div className="projects-info">
         <h5>My Projects</h5>
 
@@ -53,6 +55,7 @@ const Projects = () => {
         </Slider>
 
       </div>
+      </SlidingCard>
     </section>
   );
 };

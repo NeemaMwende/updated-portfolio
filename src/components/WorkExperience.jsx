@@ -5,6 +5,7 @@ import { WORK_EXPERIENCE } from "../../src/utils/data";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import SlidingCard from './SlidingCard';
 
 const WorkExperience = () => {
   const sliderRef = useRef();
@@ -44,7 +45,10 @@ const WorkExperience = () => {
 
   return (
     <section id='work' className='experience-container'>
+     <SlidingCard>
       <h5>Work Experience</h5>
+      </SlidingCard>
+      <SlidingCard>
       <div className="experience-content">
         <div className='arrows'>
             <div className="arrow-right" onClick={slideRight}>
@@ -60,6 +64,7 @@ const WorkExperience = () => {
           ))}
         </Slider>
       </div>
+      </SlidingCard>
     </section>
   );
 }
