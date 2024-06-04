@@ -11,6 +11,14 @@
     display: flex;
     gap: 3rem;
 }
+.copywrite{
+    text-align: center;
+    margin: 30px;
+    line-height: 50px;
+}
+.copywrite p{
+    font-style: italic;
+}
 @media(max-width: 768px){
     .contact-content{
         flex-direction: column-reverse;

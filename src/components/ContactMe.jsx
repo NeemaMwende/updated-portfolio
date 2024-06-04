@@ -43,6 +43,10 @@ const ContactMe = () => {
           <ContactForm />
         </div>
       </div>
+      <div className='copywrite'>
+        <h3>Neema Mwende</h3>
+        <p>Thank you for visiting my portfolio, Feel free to contact me</p>
+      </div>
     </section>
   );
 };

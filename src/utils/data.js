@@ -10,7 +10,7 @@ import image8 from "../Images/screenshot.png";
 export const SKILLS = [
     {
         title: "Frontend",
-        icon: {image1},
+        icon: image4,
         skills: [
             { skill: "HTML5 & CSS", percentage: "80%"},
             { skill: "Bootstrap", percentage: "98%"},
@@ -20,17 +20,17 @@ export const SKILLS = [
     },
     {
         title: "Backend",
-        icon: {image2},
+        icon: image4,
         skills: [
             { skill: "Node.js", percentage: "70%"},
             { skill: "Python", percentage: "65%"},
             { skill: "Express.js", percentage: "80%"},
-            { skill: "Javascript", percentage: "65%"},
+            { skill: "Javascript", percentage: "85%"},
         ],
     },
     {
         title: "Tools",
-        icon: {image3},
+        icon: image4,
         skills: [
             { skill: "Git & Github", percentage: "85%"},
             { skill: "Visual Studio Code", percentage: "75%"},
@@ -40,7 +40,7 @@ export const SKILLS = [
     },
     {
         title: "Soft Skills",
-        icon: {image4},
+        icon: image4,
         skills: [
             { skill: "Problem-solving", percentage: "80%"},
             { skill: "Collaboration", percentage: "98%"},
@@ -50,22 +50,22 @@ export const SKILLS = [
     },
     {
         title: "Databases",
-        icon: {image4},
+        icon: image4,
         skills: [
             { skill: "MY SQL", percentage: "80%"},
-            { skill: "Mongo DB", percentage: "98%"},
-            { skill: "Postrgress", percentage: "75%"},
-            { skill: "Team", percentage: "90%"}
+            { skill: "Mongo DB", percentage: "90%"},
+            { skill: "Postgres", percentage: "75%"},
+            // { skill: "", percentage: "90%"}
         ],
     },
     {
-        title: "Databases",
-        icon: {image4},
+        title: "Cloud-Services",
+        icon: image4,
         skills: [
-            { skill: "MY SQL", percentage: "80%"},
-            { skill: "Mongo DB", percentage: "98%"},
-            { skill: "Postrgress", percentage: "75%"},
-            { skill: "Team", percentage: "90%"}
+            { skill: "AWS", percentage: "80%"},
+            { skill: "Google Cloud", percentage: "90%"},
+            { skill: "Vercel", percentage: "75%"},
+            { skill: "Firebase", percentage: "90%"}
         ],
     },
 ];

@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div className='footer'>
-        2024 Time To Program, Happy Coding
+        @copywrite Neema. All Rights Reserved. 2024 Time To Program, Happy Coding
 
             {/* <div className="social-icons">
                 <a href="https://x.com/GracePeter1212" target='blank'>

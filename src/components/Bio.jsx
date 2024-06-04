@@ -34,7 +34,7 @@ import SlidingCard from './SlidingCard';
 
 const Bio = () => {
   return (
-    <section className='hero-container'>
+    <section className='hero-container' id='home-section'>
         <SlidingCard>
         <div className='hero-content slide-card'>
           <h2>Building Digital <span>Experiences </span>That Inspire</h2>

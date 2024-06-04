@@ -83,6 +83,7 @@
     transition: all 0.3 ease;
     text-decoration: none;
     list-style: none;
+
 }
 .btns{
     display: flex;
@@ -92,11 +93,7 @@
     color: #a993fe;
     background: #000;
     outline: 1.5px solid #a993fe;
-}
-.contact-btnn:hover{
-    color: #a993fe;
-    background: #000;
-    outline: 1.5px solid #a993fe;
+    list-style: none;
 }
 .menu-btn{
     width: 2.5rem;

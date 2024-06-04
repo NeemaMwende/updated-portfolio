@@ -1,13 +1,17 @@
 .skills-card{
     border-radius: 0.65rem;
     border: 1.5px solid #6751b9;
-    padding: 2.5rem;
+    padding: 2.0em;
+    /* padding-top: 30px; */
     text-align: center;
     background: rgba(22, 17, 47, 0.398);
     backdrop-filter: blur(1rem);
     position: relative;
     cursor: pointer;
     transition: all 0.3s ease;
+    height: 100px;
+    width: 300px;
+
 }
 .skills-card:hover,
 .skills-card.active{
@@ -16,10 +20,11 @@
 .skills-card span{
     font-size: 1.3rem;
     font-weight: 500;
+    padding-top: 40px;
 }
 .skill-icon{
-    width: 4rem;
-    height: 4rem;
+    width: 2.5rem;
+    height: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
