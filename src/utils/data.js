@@ -114,6 +114,8 @@ export const WORK_EXPERIENCE = [
 export const PROJECTS = [
     { name: 'Movie App', description: 'A React App that uses TvMazeApi API to fetch and display movies. One is also able to play the movie by being directed to their official site, or download the movie', 
     image: image6, link: 'https://movies-elx3ictfs-neemamwendes-projects.vercel.app/' },
-    { name: 'Todo-List App', description: 'A todo list react app that enables one to manage their daily activities in an orderly manner.', image: image7, link: 'https://todo-cdi0nzqio-neemamwendes-projects.vercel.app/' },
-    { name: 'Coffee App', description: 'A React coffee App designed to showcase the different variaties of the brands of coffee. ', image: image8, link: 'https://coffee-app-chi.vercel.app/' },
+    { name: 'Todo-List App', description: 'A todo list react app that enables one to manage their daily activities in an orderly manner.', 
+        image: image7, link: 'https://todo-app-teal-phi-64.vercel.app/' },
+    { name: 'Coffee App', description: 'A React coffee App designed to showcase the different variaties of the brands of coffee.' 
+        , image: image8, link: 'https://coffee-app-chi.vercel.app/' },
   ];
