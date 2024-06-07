@@ -70,3 +70,19 @@
         width: auto;
     }
 }
+@media (max-width: 400px) {
+    .skills-card span{
+        font-size: 20px;
+    }
+    .skill-icon{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .skill-icon img{
+        width: 30px;
+    }
+    .skills-card{
+        width: 200px;
+        height: fit-content;
+    }
+}
