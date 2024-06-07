@@ -60,7 +60,7 @@
 /* Responsive design for mobile view */
 @media (max-width: 768px) {
     .skills-info-card {
-      width: 300px;
+      width: 70%;
       margin: 0 auto; /* Center the card in mobile view */
     }
   }

@@ -135,3 +135,34 @@ span{
     width: 300px;
   }
 }
+@media (max-width: 425px) {
+  .projects-container h5 {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .arrow-left,
+  .arrow-right {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .arrow-left span,
+  .arrow-right span {
+    font-size: 1.5rem;
+  }
+
+  .arrow-left {
+    left: -0.5rem;
+    transform: translate(-100%, -50%);
+  }
+
+  .arrow-right {
+    right: -0.5rem;
+    transform: translate(100%, -50%);
+  }
+  .projects-info img {
+    height: 280px;
+    width: 320px;
+  }
+}
