@@ -108,3 +108,23 @@
         grid-gap: 2rem;
     }
 }
+@media (max-width: 480px) {
+    .skills-container::after,
+    .skills-container::before{
+        width: 8rem;
+        height: 8rem;
+    }
+    .skills-container h5{
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    .skills-content{
+        gap: 1.5rem;
+    }
+    .skills{
+        grid-gap: 1.5rem;
+    }
+    .skills-container{
+        width: 380px;
+    }
+}
