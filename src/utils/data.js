@@ -6,6 +6,7 @@ import image5 from "../Images/image1.jpg";
 import image6 from "../Images/movie.png";
 import image7 from "../Images/Todo.png";
 import image8 from "../Images/screenshot.png";
+import image9 from "../Images/hotel.png";
 
 export const SKILLS = [
     {
@@ -118,4 +119,6 @@ export const PROJECTS = [
         image: image7, link: 'https://todo-app-teal-phi-64.vercel.app/' },
     { name: 'Coffee App', description: 'A React coffee App designed to showcase the different variaties of the brands of coffee.' 
         , image: image8, link: 'https://coffee-app-chi.vercel.app/' },
+    { name: 'Hotel App', description: 'A Hotel coffee App designed to showcase the different variaties of the brands of coffee.' 
+            , image: image9, link: 'https://coffee-app-chi.vercel.app/' },
   ];
