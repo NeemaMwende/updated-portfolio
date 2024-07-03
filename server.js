@@ -41,7 +41,7 @@ app.post('/contact', (req, res) => {
 
         // Prepare and send email with SendGrid
         const msg = {
-            to: 'your_email@example.com', // Replace with your email address
+            to: 'neemamwende009@gmail.com', // Replace with your email address
             from: 'sender_email@example.com', // Replace with the sender's email address
             subject: 'New Contact Form Submission',
             text: `Name: ${firstname} ${lastname}\nEmail: ${email}\nMessage: ${message}`,
