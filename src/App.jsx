@@ -19,6 +19,7 @@ function App() {
             <WorkExperience />
             <Projects />
             <ContactMe />
+            
           </div>
           <Footer />  
     </div>

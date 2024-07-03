@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .slide-card{
 
@@ -37,6 +37,7 @@
 .hero-content {
   flex: 1;
   text-align: left; /* Ensure text is aligned left */
+  line-height: 50px;
 }
 
 .hero-content h2 {
@@ -61,7 +62,7 @@
 }
 .profile-img {
   height: 28rem;
-  width: 25rem;
+  width: 38rem;
   border-radius: 40px;
   /* max-width: 10rem; */
   object-fit: cover;

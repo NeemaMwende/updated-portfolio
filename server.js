@@ -8,7 +8,7 @@ const app = express();
 const port = 5000;
 
 // Set up SendGrid
-sgMail.setApiKey('F4NMWYHM3P5WXL2RJLYZN8UZ '); // Replace with your SendGrid API key
+sgMail.setApiKey(''); // Replace with your SendGrid API key
 
 app.use(cors());
 app.use(bodyParser.json());
