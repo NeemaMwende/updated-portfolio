@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import axios from 'axios';
 import './ContactForm.css';
 
 const ContactForm = () => {
@@ -21,21 +21,17 @@ const ContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    emailjs.send(
-      'service_tpijrih',   // Replace with your EmailJS service ID
-      'template_vz2nmsh',  // Replace with your EmailJS template ID
-      formData,
-      'S1Mtnqkgi92_QOqrW'       // Replace with your EmailJS user ID
-    ).then((response) => {
-      console.log('SUCCESS!', response.status, response.text);
-      alert('Message sent successfully!');
-      setFormData({ firstname: '', lastname: '', email: '', message: '' });
-      setIsSubmitting(false);
-    }).catch((err) => {
-      console.error('FAILED...', err);
-      alert('Failed to send the message, please try again.');
-      setIsSubmitting(false);
-    });
+    axios.post('http://localhost:5000/contact', formData)
+      .then(response => {
+        alert('Form submitted successfully');
+        setFormData({ firstname: '', lastname: '', email: '', message: '' });
+        setIsSubmitting(false);
+      })
+      .catch(error => {
+        console.error('There was an error submitting the form:', error);
+        alert('Failed to submit the form');
+        setIsSubmitting(false);
+      });
   };
 
   return (
