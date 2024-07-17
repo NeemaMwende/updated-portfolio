@@ -2,13 +2,10 @@ const mysql = require('mysql');
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const sgMail = require('@sendgrid/mail'); // Import SendGrid
+const emailjs = require('emailjs-com');
 
 const app = express();
 const port = 5000;
-
-// Set up SendGrid
-sgMail.setApiKey(''); // Replace with your SendGrid API key
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -39,22 +36,27 @@ app.post('/contact', (req, res) => {
             return;
         }
 
-        // Prepare and send email with SendGrid
-        const msg = {
-            to: 'neemamwende009@gmail.com', // Replace with your email address
-            from: 'sender_email@example.com', // Replace with the sender's email address
-            subject: 'New Contact Form Submission',
-            text: `Name: ${firstname} ${lastname}\nEmail: ${email}\nMessage: ${message}`,
+        // Prepare and send email with EmailJS
+        const templateParams = {
+            from_name: `${firstname} ${lastname}`,
+            from_email: email,
+            message: message,
         };
 
-        sgMail.send(msg)
-            .then(() => {
-                res.send('Contact form submitted and email sent');
-            })
-            .catch((error) => {
-                console.error('Error sending email:', error);
-                res.status(500).send('There was an error sending the email');
-            });
+        emailjs.send(
+            'service_ck8cm4a', // Replace with your EmailJS service ID
+            'template_bl0du4j', // Replace with your EmailJS template ID
+            templateParams,
+            'AD5uQhpmjSLM8QZvv' // Replace with your EmailJS user ID
+        )
+        .then((response) => {
+            console.log('Email successfully sent!', response.status, response.text);
+            res.send('Contact form submitted and email sent');
+        })
+        .catch((error) => {
+            console.error('Error sending email:', error);
+            res.status(500).send('There was an error sending the email');
+        });
     });
 });
 
